@@ -7,31 +7,31 @@ console.log(data);
 
 
 // 1: Show me how to calculate the average price of all items.
-function question1 () {
-  const average = data.reduce((total, amount, index, array) => { total += amount;
-    if ( index === array.length-1) {
-      return total/array.length;
-    } else {
-        return total;
-      }
-  });
 
-  console.log("The average price is"+ " " + average + ".")
+function question1 () {
+  let sum = 0
+  //comb through the array for each object to look for each price.
+  for (var i = 0; i < data.length; i++) {
+  //get total of all "price" keys
+    sum += data[i].price
+  }
+  console.log("The average price is"+ " " + Math.round(sum / data.length)
+ + ".")
 }
 
 
 
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2 () {
-  if key = ["price"]
-
+  
 }
 
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3 () {
-  // Answer:
+
 }
+
 
 
 // 4: Display a list of all items who are made of wood.
